@@ -36,6 +36,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    overflow-x: auto;
+    width: 100%;
 }
 
 nav ul {
@@ -44,10 +46,15 @@ nav ul {
     list-style: none;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: nowrap;
+    padding: 0 1rem;
+    min-width: max-content;
 }
 
 nav ul li {
     padding: 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 nav ul li a {
@@ -512,8 +519,16 @@ footer {
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        padding: 0 0.5rem;
+    }
+    
+    nav ul li {
+        padding: 0.8rem 0.6rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem;
     }
     
     .events-container {
@@ -534,7 +549,7 @@ footer {
     
     .past-events li {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; 
     }
     
     .past-events .event-date,
@@ -556,5 +571,13 @@ footer {
     table th, table td {
         padding: 0.5rem;
         font-size: 0.9rem;
+    }
+    
+    nav ul li {
+        padding: 0.7rem 0.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.8rem;
     }
 } 
