@@ -1,0 +1,560 @@
+/* 全体のスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ナビゲーション */
+nav {
+    background-color: #34495e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #3498db;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 目次スタイル */
+.table-of-contents {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #3498db;
+}
+
+.table-of-contents h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.table-of-contents ul {
+    margin-left: 1.5rem;
+}
+
+.table-of-contents ul li {
+    margin-bottom: 0.5rem;
+}
+
+.table-of-contents ul li a {
+    display: inline-block;
+    padding: 0.2rem 0;
+    font-weight: 500;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.table-of-contents ul li a:hover {
+    transform: translateX(5px);
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* リンクスタイル */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* ホームページのクイックリンク */
+.home-links {
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.home-links h3 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+.home-links ul {
+    margin-left: 2rem;
+}
+
+.home-links li {
+    margin-bottom: 0.5rem;
+}
+
+/* BOXページのスタイル */
+.box-container h3 {
+    margin: 1.5rem 0 1rem;
+    color: #2980b9;
+}
+
+.tip-box {
+    background-color: #e1f5e1;
+    border-left: 4px solid #27ae60;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tip-box p {
+    margin-bottom: 0.5rem;
+}
+
+.tip-box p strong {
+    color: #27ae60;
+}
+
+/* 会計報告セクション */
+.accounting-container h3 {
+    margin: 1.5rem 0 1rem;
+    color: #2980b9;
+}
+
+/* 会費使用手順のスタイル */
+.procedure-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.procedure-container p {
+    margin-bottom: 1rem;
+}
+
+.procedure-container h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.procedure-container ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.procedure-container ol li {
+    margin-bottom: 0.5rem;
+}
+
+.procedure-container ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.procedure-container ul li {
+    margin-bottom: 0.5rem;
+}
+
+.note-box {
+    background-color: #fff4e5;
+    border-left: 4px solid #f39c12;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.note-box p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.note-box ul {
+    margin-left: 1.5rem;
+}
+
+.note-box ul li {
+    margin-bottom: 0.3rem;
+}
+
+/* テーブルスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.account-info {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* 新歓情報セクション */
+.welcome-container h3 {
+    margin: 1.5rem 0 1rem;
+    color: #2980b9;
+}
+
+.welcome-container ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.welcome-container li {
+    margin-bottom: 0.5rem;
+}
+
+.info-card {
+    background-color: #e8f4fc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #bbd8e8;
+    padding-bottom: 0.5rem;
+}
+
+.info-card p {
+    margin-bottom: 0.5rem;
+}
+
+.info-card p strong {
+    color: #2980b9;
+}
+
+.contact-info-small {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border-left: 4px solid #3498db;
+}
+
+.contact-info-small p {
+    margin-bottom: 0.5rem;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+/* イベント情報セクション */
+.events-calendar {
+    margin-bottom: 2rem;
+}
+
+.events-calendar h3 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+.events-calendar ul {
+    list-style: none;
+}
+
+.events-calendar li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+
+.events-calendar .event-date {
+    min-width: 120px;
+    font-weight: bold;
+}
+
+.events-calendar .event-name {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.events-calendar .event-report {
+    margin-left: auto;
+}
+
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.event-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+}
+
+.event-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.event-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+.past-events {
+    margin-top: 3rem;
+}
+
+.past-events h3 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+.past-events ul {
+    list-style: none;
+}
+
+.past-events li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.past-events .event-date {
+    min-width: 120px;
+    font-weight: bold;
+}
+
+.past-events .event-name {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.past-events .event-report {
+    margin-left: auto;
+}
+
+/* 連絡先セクション */
+.contact-container h3 {
+    margin: 1.5rem 0 1rem;
+    color: #2980b9;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-person {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-person h4 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.social-media, .location {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-media p, .location p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+/* フッター */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .past-events li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .past-events .event-date,
+    .past-events .event-name,
+    .past-events .event-report {
+        margin: 0.25rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+    
+    table th, table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+} 
